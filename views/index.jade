@@ -1,0 +1,13 @@
+html
+  head
+    title Intro to Node and MongoDB
+  body
+    h1 Into to Node and MongoDB
+    form(method='post', action='/users/insertuser')
+      label Enter Your Name
+      br
+      input(type='text', name='firstname', placeholder='Enter first name...', required='')
+      br
+      input(type='text', name='lastname', placeholder='Enter last name...', required='')
+      br
+      input(type='submit', value='Add Name')
