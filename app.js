@@ -3,9 +3,18 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+//const mongoose = require("mongoose");
 
 const db = require('./db');
+const mongooseConn = require('./connection');
 
+// mongoose.connect('mongodb://localhost:27017/mean', { useNewUrlParser: true })
+// .then(() => {
+//   console.log('Connected to database!');
+// })
+// .catch(() => {
+//   console.log('Connection Failed');
+// });
 
 
 var indexRouter = require('./routes/index');
